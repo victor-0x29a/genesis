@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+:root{
+    --corInput: rgb(58, 57, 57);
+    --corFundo: rgb(54, 53, 53);
+    --corClaro: rgb(119, 115, 115);
+    --corServidor: rgba(236, 24, 105, 0.651);
+    --corFonte: white;
+    --fonteUniversal: 'Cabin', sans-serif;
+    --corSucesso: green;
+    --corError: red;
+}
+
+
+.content-login{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-login form{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    box-shadow: 2px 2px 8px 1px black;
+    padding: 2vh;
+    text-align: center;
+}
+
+button{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+button[name="confirm-button"]{
+    width: 100%;
+    font-size: 4vh;
+    padding: 2vh;
+    color: black;
+    border: 2px solid transparent;
+    font-family: var(--fonteUniversal);
+    background-color: var(--corSucesso);
+    border-radius: 27px 27px 27px 27px;
+    transition-duration: 650ms;
+}button[name="confirm-button"]:hover{
+    background-color: transparent;
+    border: 2px solid var(--corSucesso);
+}
+
+button[name="cancel-button"]{
+    width: 100%;
+    font-size: 4vh;
+    padding: 2vh;
+    color: black;
+    border: 2px solid transparent;
+    font-family: var(--fonteUniversal);
+    background-color: var(--corError);
+    border-radius: 27px 27px 27px 27px;
+    transition-duration: 650ms;
+}button[name="cancel-button"]:hover{
+    background-color: transparent;
+    border: 2px solid var(--corError);
+}
+
+input[name="input-email"]{
+    width: 100%;
+    color: black;
+    height: 6vh;
+    border-radius: 15px 15px 15px 15px;
+    outline: none;
+    border: 1px solid black;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 4vh;
+}
+
+input[name="input-password"]{
+    width: 100%;
+    color: black;
+    height: 6vh;
+    border-radius: 15px 15px 15px 15px;
+    outline: none;
+    border: 1px solid black;
+    font-size: 4vh;
+}
