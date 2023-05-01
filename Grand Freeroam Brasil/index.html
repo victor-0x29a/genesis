@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="tabelas">
+            <a href="#" class="content-01"><h1 class="h11">LOGAR</h1></a>
+            <a href="#" class="content-02"><h1 class="h12">REGISTRAR</h1></a>
+        </div>
+        <div class="div_forms">
+            <form action="#" class="login-form">
+                <p>
+                    Usuário
+                </p>
+                <div class="usuarioContainer">
+                    <input type="text" class="userLogin">
+                </div>
+                <p>
+                    Senha
+                </p>
+                <div class="senhaContainer">
+                    <input type="password" class="userSenha" minlength="4" onkeyup="checkbox()">
+                    <label><img src="olho.png" alt="zoi de gato" class="img" onclick="checkSenha()"></label>
+                </div>
+                <div id="check">
+                    <input type="checkbox" class="saveLogin">
+                    <label for="saveLogin">Salvar meu login</label>
+                </div>
+                <button>Entrar</button>
+            </form>
+            <form action="#" class="register-form">
+                <p>
+                    Usuário
+                </p>
+                <div class="usuarioContainer">
+                    <input type="text" class="userLogin">
+                </div>
+                <p>
+                    Senha
+                </p>
+                <div class="senhaContainer">
+                    <input type="password" class="userSenha" minlength="4">
+                </div>
+                <p>
+                    REPITA SUA SENHA
+                </p>
+                <div class="senhaContainer2">
+                    <input type="password" class="userSenha2" minlength="4">
+                </div>
+                <button id="buttonReg">CADASTRAR-SE</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
