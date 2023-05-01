@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+body{
+    background-color: rgba(46, 77, 87, 0.877);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    background-color: rgba(60, 128, 105, 0.514);
+    box-shadow: 0 0 1em black;
+
+}nav ul{
+    display: flex;
+    height: 75px;
+}nav li{
+    display: flex;
+    margin-left: 35px;
+    margin-right: 85px;
+    font-size: 35px;
+}nav li a{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Contrail One', cursive;
+}
+
+#navtransity2{
+    color: rgb(0, 102, 128);
+}
+.central{
+    display: flex;
+    font-family: 'Anek Latin', sans-serif;
+    margin-top: 125px;
+    animation: welcome 2s ease-in-out normal;
+    height: 1200px;
+}.central img{
+    width: 135px;
+    height: auto;
+    margin-top: 15px;
+}
+#painel{
+    display: flex;
+    margin: auto;
+    margin-top: 0;
+}#painel2{
+    display: flex;
+    margin: auto;
+}
+#bloco1{
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    box-shadow: -1em 0em 1em 0 black;
+    border-right: 2px solid rgb(0, 0, 0);
+}#bloco2{
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+    width: 300px;
+    height: 350px;
+    box-shadow: 1em 0em 1em 0 black;
+    border-left: 2px solid rgb(0, 0, 0);
+    background-color: rgba(36, 35, 36, 0.397);
+}#bloco2 h3{
+    font-family: 'Anek Latin', sans-serif;
+    font-weight: 200px;
+    margin-top: 50px;
+    font-size: 35px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}#bloco2 p{
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+#painel input[type='text']{
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
+    border: 1px solid black;
+    padding-left: 5px;
+}#painel3 input[type='text'],#painel3 input[type='password'],#painel3 input[type='email']{
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    -webkit-appearance: none;
+    border: 1px solid black;
+    padding-left: 5px;
+    
+}#separate input[type='text'],#separate input[type='password']{
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    -webkit-appearance: none;
+    border: 1px solid black;
+    padding-left: 5px;
+}
+#painel input[type='password']{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 15px; 
+    border: 1px solid black;
+}#entrarlogin{
+    width: 120px;
+    height: auto;
+    font-size: 25px;
+    background-color: rgba(240, 255, 255, 0);
+    margin-right: 118px;
+    margin-top: 13px;
+    border: 0;
+    box-shadow: 2px 2px 2px 3px black;
+    border-left: 0;
+    border-right: 0;
+    transition-duration: 800ms;
+    border-radius: 30px 30px;
+}#entrarlogin:hover{
+    box-shadow: 2px 2px 2px 2px rgb(58, 57, 57);
+    cursor: pointer;
+}#registrobutton{
+    margin-right: 50px;
+    margin-top: 7px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition-duration: 400ms;
+}#registrobutton:hover{
+    color: rgb(73, 72, 68);
+}#rowregister{
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    margin-top: -2px;
+    transition-duration: 400ms;
+}#rowregister:hover{
+    width: 55px;
+    height: auto;
+}#rowlogin{
+    margin-top: -2px;
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    transition-duration: 400ms;
+}#rowlogin:hover{
+    width: 55px;
+    height: auto;
+}
+#bloco3{
+    border-left: 1px ridge black;
+    margin-top: -25px;
+    box-shadow: 1em 0em 1em 0 black;
+    width: 380px;
+    height: 980px;
+    text-align: center;
+}#bloco3 input[type='password']{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 15px;   
+}#emailregister{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 15px;  
+}#bloco3 input[type='text']{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 15px;  
+}#painel3{
+    display: none;
+    margin: auto;
+}#painel0{
+    display: none;
+}#bloco0{
+    background-color: rgba(36, 35, 36, 0.397);
+    margin-top: 25px;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    box-shadow: -1em 0em 1em 0 black;
+}#bloco0 h3{
+    font-family: 'Anek Latin', sans-serif;
+    font-weight: 200px;
+    margin-top: 50px;
+    font-size: 35px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}#bloco0 p{
+    font-weight: bold;
+    font-size: 25px;
+}#titleregister{
+    margin-top: 5px;
+    font-size: 30px;
+    margin-bottom: 15px;
+}#alert001,#alert002,#alert003{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}#styleresidencia,#styletshirt,#styledocument,#registerfinally{
+    width: 250px;
+    height: 50px;
+    margin-bottom: 15px;
+    border-radius: 20px/30px;
+    -moz-border-radius: 20px 30px;
+    font-weight: bold;
+    background-color: rgba(71, 67, 67, 0.575);
+    font-size: 20px;
+    cursor: pointer;
+    border: 0;
+    transition-duration: 400ms;
+}#styleresidencia:hover,#styletshirt:hover,#styledocument:hover,#registerfinally:hover{
+    color: white;
+    background-color: black;
+}#registerfinally{
+    margin-top: 15px;
+}
+#imagedocument,#imagetshirt,#imageresidencia{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 900px){
+    body{
+        overflow-x: hidden;
+    }nav ul{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 612px){
+    nav ul{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        flex-direction: column;
+    }
+    #painel{
+        margin-top: 0;
+        flex-direction: column;
+    }#bloco1{
+        box-shadow: 0 0 5px black;
+    }
+    #bloco2{
+        margin-top: 0;
+        box-shadow: 0 0 5px black;
+    }
+}
+@media screen and (max-width: 975px){
+    body{
+        overflow-x: hidden;
+    }
+    nav ul{
+        height: auto;
+    }
+}
+@media screen and (max-width: 790px){
+    #painel{
+        margin-top: 0;
+        flex-direction: column;
+    }#bloco1{
+        box-shadow: 0 0 5px black;
+    }
+    #bloco2{
+        margin-top: 0;
+        box-shadow: 0 0 5px black;
+    }#bloco3{
+        box-shadow: 0 0 5px black;
+        margin-top: 0;
+        flex-direction: column;
+        height: 1000px;
+    }#bloco0{
+        box-shadow: 0 0 5px black;
+        width: 380px;
+    }#titleregister{
+        margin-top: 25px;
+    }
+}
+@keyframes welcome {
+    0%{
+        margin-left: -2200px;
+    }
+    
+}
