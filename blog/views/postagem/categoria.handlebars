@@ -1,0 +1,18 @@
+<h2>Categorias:</h2>
+<br>
+{{#each data}}
+    <div class="accordion accordion-flush ms-5" id="accordionFlushExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#{{this.slug}}" aria-expanded="false" aria-controls="flush-collapseOne">
+            {{this.nome}}
+        </button>
+        </h2>
+        <div id="{{this.slug}}" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">{{this.sobre}}</div>
+            <a href="/categorias/{{this.slug}}" class="btn btn-secondary ms-3 mb-3">Ver postagens</a>
+        </div>
+    </div>
+    </div>
+
+{{/each}}

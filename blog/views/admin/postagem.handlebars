@@ -1,0 +1,19 @@
+<h2>Postagens:</h2>
+<br>
+<a href="/admin/addpostagens" class="btn btn-success mt-3 mb-3">Criar postagem</a>
+<div class="container d-flex justify-content-between flex-wrap">
+
+    {{#each data}}
+        <div class="card mt-5 mb-5" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{this.titulo}}</h5>
+                <p class="card-text">{{this.descricao}}</p>
+                <a href="/admin/editpostagens/{{this._id}}" class="card-link">Editar post</a>
+                <a href="/admin/removepost/{{this._id}}" class="card-link">Remover post</a>
+            </div>
+        </div>
+    {{/each}}
+
+</div>
+
+

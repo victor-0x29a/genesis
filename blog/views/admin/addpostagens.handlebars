@@ -1,0 +1,38 @@
+<h3>Criar post</h3>
+<div class="card">
+    <div class="card-body">
+        <form action="/admin/addpostagens" method="POST">
+
+            <div class="form-floating mb-3 w-25">
+                <input type="text" class="form-control" name="titulo" id="floatingInput" placeholder="Titulo">
+                <label for="floatingInput">Titulo</label>
+            </div>
+            <div class="form-floating mb-3 w-25">
+                <input type="text" class="form-control" name="descricao" id="floatingInput" placeholder="Descrição">
+                <label for="floatingInput">Descrição</label>
+            </div>
+            <div class="form-floating mb-3 w-25">
+                <input type="text" class="form-control" name="slug" id="floatingInput" placeholder="Slug">
+                <label for="floatingInput">Slug</label>
+            </div>
+            <div class="form-floating mb-3 w-25">
+                <textarea type="text" class="form-control" name="texto" id="floatingInput" placeholder="Texto"></textarea>
+            </div>
+            <div class="form-floating mb-3 w-25">
+                <h5>Categoria</h5>
+                <select name="categoria" class="form-select">
+                    {{#each data}}
+                        <option value="{{_id}}">{{this.nome}}</option>
+                    {{else}}
+                        <option value="x">Nenhuma categoria registrada.</option>
+                    {{/each}}
+                    <br>
+                </select>
+            </div>
+
+
+            <button class="btn btn-success">Criar</button>
+            <a href="/admin/postagens" class="btn btn-danger">Cancelar</a>
+        </form>
+    </div>
+</div>

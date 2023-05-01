@@ -1,0 +1,23 @@
+<h2>Editando postagem:</h2>
+<div class="card">
+    <div class="card-body">
+        <form action="/admin/editpostagens" method="POST">
+            <input type="hidden" name="id" value="{{id}}">
+            <div class="form-floating mb-3 w-25">
+                <input type="text" class="form-control" value="{{titulo}}" name="titulo" id="floatingInput" placeholder="Titulo">
+                <label for="floatingInput">Titulo</label>
+            </div>
+                <div class="form-floating mb-3 w-25">
+                <input type="text" class="form-control" value="{{slug}}" name="slug" id="floatingInput" placeholder="Slug">
+                <label for="floatingInput">Slug</label>
+            </div>
+            <div class="form-floating mb-3 w-25">
+                <textarea type="text" class="form-control" name="texto" id="floatingInput" placeholder="Texto">{{corpo}}</textarea>
+            </div>
+
+
+            <button class="btn btn-success">Editar</button>
+            <a href="/admin/postagens" class="btn btn-danger">Cancelar</a>
+        </form>
+    </div>
+</div>

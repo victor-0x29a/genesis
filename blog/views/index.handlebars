@@ -1,0 +1,33 @@
+<div class="container">
+
+    <div class="row bg-secondary">
+        <div class="col-12 d-flex justify-content-center flex-column text-center mt-5">
+            <h1>Bem vindo ao Blog!</h1>
+            <p>Entre e poste o seu pensamento ou aquela história fantástica do dia!</p>
+        </div>
+        <br>
+        <div class="col-12 text-left">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dicta, error ad saepe ipsum, voluptates ipsa exercitationem vel hic esse, facilis eos quas nihil quae magni autem eaque sunt recusandae!</p>
+            <a href="#" class="btn btn-primary mb-5">Criar uma conta</a>
+        </div>
+    </div>
+    <h2 class="mt-5">Postagens recentes</h2>
+    {{#each data}}
+        <div class="card mt-5 mb-5">
+
+            <div class="card-body"> 
+                <h3>{{this.titulo}}</h3>
+                <p>{{this.descricao}}</p>
+            </div>
+            <div class="my text-center">
+                <a href="/post/{{this.slug}}"><button class="btn btn-success mb-2">Leia mais</button></a>
+                <br>
+                <small>{{this.categoria.nome}}</small>
+                <br>
+                <small>Data: {{this.data}}</small>
+            </div>
+        </div>
+    {{else}}
+        <h5>Nenhuma postagem</h5>
+    {{/each}}
+</div>

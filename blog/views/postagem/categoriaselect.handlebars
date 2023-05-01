@@ -1,0 +1,19 @@
+
+
+<h1>Todos os itens da categoria {{categoria}}:</h1>
+{{#each data}}
+    <div class="card mt-5 mb-5">
+
+        <div class="card-body"> 
+            <h3>{{this.titulo}}</h3>
+            <p>{{this.descricao}}</p>
+        </div>
+        <div class="my text-center">
+            <a href="/post/{{this.slug}}"><button class="btn btn-success mb-2">Leia mais</button></a>
+            <br>
+            <small>Data: {{this.data}}</small>
+        </div>
+    </div>
+{{else}}
+    <h5>Nenhuma postagem</h5>
+{{/each}}

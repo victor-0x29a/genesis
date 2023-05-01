@@ -1,0 +1,17 @@
+<h2>Categorias disponiveis:</h2>
+<div class="container d-flex justify-content-between flex-wrap">
+    {{#each cat}}
+        <div class="card mt-2" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">{{this.nome}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">{{this.slug}}</h6>
+                <p class="card-text">{{this.sobre}}</p>
+                <a href="categorias/edit/{{_id}}" class="card-link">Editar categoria</a>
+                <a href="categorias/remove/{{_id}}" class="card-link">Excluir categoria</a>
+            </div>
+        </div>
+    {{/each}}
+</div>
+
+<br>
+<a href="/admin/criarcategoria"><button class="btn btn-success">Criar categoria</button></a>
