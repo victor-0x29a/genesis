@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hotbar">
+            <h1>
+                Concessionaria
+            </h1>
+            <div class="search-camp">
+                <img src="lupa.png" alt="lupa icone" onclick="coletarInfo()" >
+                <input type="text" id="barra-pesquisa" placeholder="Procure seu veiculo"> 
+            </div>
+        </div>
+        <div class="main">
+            <blockquote id="vehicle-client-choice">
+                <blockquote id="vehicle-model">
+                    <img src="veiculos/porsche-taycan.png" alt="">
+                    <blockquote class="action-client-rows">
+                        <div class="row-left"></div>
+                        <h2 id="porsche">
+                            Porsche Taycan
+                        </h2>
+                        <div class="row-right"></div>
+                    </blockquote>
+                </blockquote>
+                <blockquote id="specs-vehicle">
+                    <p id="estoque"><strong>50</strong> Unidades disponiveis!</p>
+                    <p id="velocidade">Velocidade máxima <strong>320Km/h</strong></p>
+                    <p id="porta-malas">Porta-Malas <strong>120Kg</strong></p>
+                    <div class="colors">
+                        <p id="cores">Cores disponiveis</p>
+                        <p id="white-block"></p>
+                        <p id="black-block"></p>
+                    </div>
+                </blockquote>
+            </blockquote>
+            <blockquote id="client-actions">
+                <button onclick="comprarPorsche()">Comprar</button>
+            </blockquote>
+        </div> 
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
