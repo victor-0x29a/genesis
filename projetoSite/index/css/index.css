@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+body{
+    background-color: rgb(119, 71, 71);
+    min-width: 400px;
+    max-height: auto;
+    margin: auto;
+    animation: backrgb 2s ease-in-out infinite;
+}
+* h1{
+    font-family: 'Quicksand', sans-serif;
+}
+* p{
+    font-size: 30px;
+    font-family: 'Slabo 27px', serif;
+}* h6{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+nav ul{
+    background-color: rgb(190, 90, 9);
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    font-size: 20px;
+}nav ul li{
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+}nav ul li:hover{   
+    background-color: rgba(255, 108, 9, 0.541);
+    cursor: pointer;
+}#home00{
+    display: flex;
+    justify-content: center;
+}
+#homediv00{
+    margin-top: 15px;
+    text-align: center;
+    width: 680px;
+    height: 340px;
+    margin-bottom: 75px;
+}#homediv00 p{
+    margin-left: 15px;
+    margin-top: 45px;
+    font-size: 40px;
+}
+#homediv00 img{
+    width: 340px;
+    height: 280px;
+    border-radius: 50%;
+    box-shadow: 0 0 1em black;
+}#title0{
+    margin-top: 130px;
+    font-size: 65px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: right;
+    margin-right: 15px;
+}#title1{
+    margin-top: 130px;
+    font-size: 65px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    margin-left: 15px;
+}.separator1{
+    display: block;
+    border-bottom: 2px solid rgba(255, 108, 9, 0.541);
+    margin-bottom: 15px;
+}
+.separator0{
+    display: block;
+    border-bottom: 2px solid rgba(255, 108, 9, 0.541);
+    margin-bottom: 15px;
+}#home02{
+    text-align: center;
+    display: flex;
+    margin-bottom: 50px;
+}
+#homediv03{
+    margin-left: 35px;
+    width: 500px;
+    height: 380px;
+}#homediv03 img{
+    width: 380px;
+    height: auto;
+}#homediv04{
+    text-align: center;
+    width: 500px;
+    height: 380px;
+    margin-top: 150px;
+    margin-left: 120px;
+}#homediv04 a{
+    color: black;
+}#home04{
+    margin-left: 325px;
+}
+#homediv06{
+    text-decoration: none;
+    text-align: center;
+    width: 500px;
+    height: 380px;
+    margin-bottom: 125px;
+}#homediv06 p a{
+    color: rgb(255, 255, 255);
+}
+
+@keyframes backrgb {
+    0%,100%{
+        background-color: rgb(119, 71, 71);
+    }50%{
+        background-color: rgb(133, 65, 65);
+    }
+    
+}
