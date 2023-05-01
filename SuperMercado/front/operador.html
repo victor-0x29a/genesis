@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/operador.css">
+    <script src="javascript/operador.js" async></script>
+    <title>Entre com F11</title>
+</head>
+<body>
+    <div id="divalert">
+        <h2 id="nickk"></h2><br>
+        <h2 id="valorr"></h2>
+    </div>
+    <div id="locked">
+        <div id="div01">
+            <blockquote id="bloco1">
+                <p>Código de barras</p><input type="number" id="ean-operador"><br>
+                <p>Quantidade</p><input type="number" id="quant-operador"><br>
+                <p>Id</p><input type="number" id="linha"><br>
+                <input type="button" value="Ok" onclick="pegarItem()"> <input type="button" value="Remover" onclick="removerId()"> <input type="button" value="Consultar" onclick="consultarApi()"><br>
+                <p id="userConnected"></p><br>
+                <input type="button" value="Pagar" onclick="coletarCompra()">
+            </blockquote>
+        </div>
+        <div id="manipulateJs">
+            <div id="listas">
+                <div class="lista">
+                    <h2 class="itens">Produto</h2>
+                    <h2 class="itens">Valor</h2>
+                    <h2 class="itens">Quantidade</h2>
+                    <h2 class="itens">Id</h2>
+                    <h2 class="itens">Total</h2>
+                </div>
+            </div>
+        </div>
+        <h3 id="total-itens">Aguardando...</h3>
+    </div>
+</body>
+</html>

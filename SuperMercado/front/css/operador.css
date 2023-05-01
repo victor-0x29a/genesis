@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scrollbar-color: orange;
+}
+body{
+    background-color: rgba(133, 80, 0, 0.527);
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: blue orange;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: rgba(94, 94, 99, 0.829);
+    border-radius: 20px;
+    border: 3px solid rgba(0, 0, 0, 0);
+  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+#bloco1{
+    margin: auto;
+    margin-top: 200px;
+    margin-left: 25px;
+    font-family: 'Share Tech Mono', monospace;
+}#bloco1 input[type='number']{
+    background-color: rgba(186, 190, 167, 0.479);
+    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 0;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    text-align: center;
+}#bloco1 input[type='button']{
+    cursor: pointer;
+    font-size: 25px;
+    text-align: center;
+    border: 0;
+    box-shadow: 0 0 6px black;
+    padding: 8px;
+    transition-duration: 600ms;
+}#bloco1 input[type='button']:hover{
+    background-color: transparent;
+}
+#div01{
+    position: fixed;
+}
+#locked{
+    display: flex;
+}#userConnected{
+    margin-top: -500px;
+    margin-right: 225px;
+    text-align: center;
+    font-size: 35px;
+    position: fixed;
+    font-size: 45px;
+}#manipulateJs{
+    margin-top: 50px;
+    margin-left: 450px;
+    text-align: center;
+    border: 3px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Bree Serif', serif;
+    overflow-y: scroll;
+    position: fixed;
+    height: 460px;
+}#total-itens{
+    position: fixed;
+    margin-left: 980px;
+    margin-top: 560px;
+    font-size: 45px;
+    font-family: 'Baloo 2', cursive;
+    color: black;
+}#listas .lista{
+    background-color: rgba(255, 255, 255, 0);
+    width: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-radius: 5px;
+}#listas div{
+    background-color: rgba(255, 255, 255, 0);
+    width: 800px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-radius: 5px;
+}#listas div h3{
+    margin-inline: 10px;
+    padding: 5px;
+    margin: 0;
+    width: 120px;
+    font-size: 1.1em;
+    color: black;/*rgb(65, 61, 61)*/
+}
+#listas .lista .itens h2{
+    color: black;
+}
+
+#listas .lista .itens{
+    margin-inline: 10px;
+    padding: 5px;
+    margin: 0;
+    width: 120px;
+    font-size: 1.1em;
+    color: black;/*rgb(65, 61, 61)*/
+}#divalert{
+    display: none;
+    margin-top: 150px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 80px;
+    color: rgb(65, 61, 61);
+}
