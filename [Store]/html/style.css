@@ -1,0 +1,195 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+:root{
+    --fontForm: 'Hind Madurai', sans-serif;
+    --fontTitle: 'Secular One', sans-serif;
+    --fontCor: white;
+    --fundoInteraction: rgb(51, 49, 49);
+    --fundoInput: rgb(92, 88, 88);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(211, 211, 211);
+}
+body::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: #6e6e6e;
+  }
+  body::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+  }
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+}nav ul li{
+    position: relative;
+    transition-duration: 650ms;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: var(--fundoInteraction);
+}nav ul li:hover{
+    background-color: rgb(70, 130, 180);
+}
+nav ul li a{
+    font-size: 28px;
+    text-shadow: 2px 2px black;
+    color: var(--fontCor);
+    font-family: var(--fontTitle);
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+}
+
+.container{
+    width: 100%;
+    height: 800px;
+    display: none;
+}
+
+#fundo{
+    position: absolute;
+    filter: blur(4px);
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.473);
+}
+
+.vendas{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    left: 20%;
+    width: 800px;
+    flex-direction: column;
+}
+.separation{
+    border: 1px solid red;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 800px;
+}
+#item{
+    cursor: pointer;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+    background-color: white;
+    width: 170px;
+    border-radius: 15px 15px 15px 15px;
+    transition-duration: 650ms;
+}
+#item img{
+    width: 170px;
+    height: 220px;
+    border-radius: 15px 15px 15px 15px;
+}#item h2{
+    font-size: 20px;
+    text-align: center;
+    font-family: var(--fontForm);
+}#item:hover{
+    background-color: black;
+    color: var(--fontCor);
+}
+
+
+
+.container-login{
+    position: relative;
+    display: grid;
+    width: 400px;
+    height: 350px;
+    margin: auto;
+    margin-top: 2%;
+}.box-login{
+    border-radius: 15px 15px 15px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fundoInteraction);
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 1em black;
+}.box-login p{
+    font-family: var(--fontTitle);
+    color: var(--fontCor);
+    text-shadow: 2px 2px black;
+    font-size: 35px;
+}
+#form-style input[type="text"], #form-style input[type="password"]{
+    width: 300px;
+    height: 30px;
+    background-color: var(--fundoInput);
+    border: 0;
+    outline: 0;
+    font-size: 25px;
+    border-radius: 15px 15px 15px 15px;
+    text-align: center;
+    color: var(--fontCor);
+}
+#form-style{
+    margin: auto;
+    display: flex;
+    width: 300px;
+    height: 30px;
+    font-family: var(--fontForm);
+    color: var(--fontCor);
+}#form-style img{
+    width: 30px;
+    cursor: context-menu;
+}
+
+.box-login button{
+    position: relative;
+    margin: auto;
+    margin-top: 3%;
+    border-radius: 15px 15px 15px 15px;
+    border: 0;
+    background-color: var(--fundoInput);
+    font-family: var(--fontForm);
+    font-weight: bolder;
+    color: var(--fontCor);
+    font-size: 25px;
+    width: 300px;
+    transition-duration: 650ms;
+    cursor: pointer;
+    margin-bottom: 0;
+}.box-login button:hover{
+    background-color: var(--fontCor);
+    color: var(--fundoInput);
+}
+
+
+#message-form-login{
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 5px;
+    font-size: 18px;
+}#message-form-login a{
+    color: rgb(70, 130, 180);
+    cursor: pointer;
+}
+
+#logo-form-login{
+    width: 240px;
+    margin: 0;
+    margin: auto;
+}

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+:root{
+    --fontForm: 'Hind Madurai', sans-serif;
+    --fontTitle: 'Secular One', sans-serif;
+    --fontCor: white;
+    --fundoInteraction: rgb(51, 49, 49);
+}
+
+body{
+    background-color: gray;
+}
+.container{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    background-color: rgb(90, 86, 86);
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 15px 15px 15px 15px;
+}
+.box form label{
+    font-family: var(--fontForm);
+    text-align: center;
+    color: white;
+}.box form label input[type="text"], .box form label input[type="password"]{
+    font-size: 25px;
+    padding: 5px;
+    border: 0;
+    border-radius: 12px 12px 12px 12px;
+    background-color: var(--fundoInteraction);
+    color: var(--fontCor);
+    outline: 0;
+}.box form button{
+    font-size: 20px;
+    padding: 4px;
+    background-color: var(--fundoInteraction);
+    border: 0;
+    margin-top: 15px;
+    color: var(--fontCor);
+    width: 100%;
+    border-radius: 12px 12px 12px 12px;
+    transition-duration: 650ms;
+    cursor: pointer;
+}.box form button:hover{
+    background-color: var(--fontCor);
+    color: var(--fundoInteraction);
+}.box form h1{
+    font-family: var(--fontTitle);
+    font-size: 28px;
+    color: black;
+    text-align: center;
+}
+
+.box form p{
+    font-family: var(--fontForm);
+    color: var(--fontCor);
+}.box form p a{
+    color: purple;
+    cursor: pointer;
+}
+
+.alert-box{
+    position: fixed;
+    display: none;
+    background-color: purple;
+    width: auto;
+    padding: 5px;
+    border-radius: 15px 15px 15px 15px;
+    font-family: var(--fontForm);
+    color: var(--fontCor);
+}
+
+
+
+@keyframes alert {
+    0%{
+        margin-top: -100%;
+    }100%{
+        margin-top: 0%;
+    }
+}
+
+@keyframes alertLeave {
+    0%{
+        margin-top: 0%;
+    }100%{
+        margin-top: 100%;
+    }
+}

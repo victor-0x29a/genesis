@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pierre's Store</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="nav-01" onclick="main()">
+                <a href="#" >Pierre's Store</a>
+
+            </li>
+            <li id="nav-02" onclick="main()">
+                <a href="#"  >Roupas</a>
+
+            </li>
+            <li id="nav-03" onclick="login()" >
+                <a href="#" >Entre</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <img src="img/fundo3.jpg" id="fundo">
+        <div class="vendas">
+        </div>
+    </div>
+
+    <div class="container-login">
+        <div class="box-login">
+            <img src="img/icones/logo.png" id="logo-form-login">
+            <form>
+                <p id="info-text">Email</p>
+                <div id="form-style">
+                    <input type="text" id="content-form-login-user">
+                </div>
+                <p id="info-text">Senha</p>
+                <div id="form-style">
+                    <input type="password" id="content-form-login-pass">
+                </div>
+            </form>
+            <button>Entrar</button>
+            <p id="message-form-login">Ainda não tem uma <a>conta?</a></p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
