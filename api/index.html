@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        margin-top: 7%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bottom{
+        width: 5vh;
+        height: 15vh;
+        background-color: black;
+    }
+    .left{
+        width: 15vh;
+        height: 5vh;
+        background-color: black;
+    }
+    .right{
+        width: 15vh;
+        height: 5vh;
+        background-color: black;
+    }
+    .top{
+        width: 5vh;
+        height: 15vh;
+        background-color: black;
+    }.box{
+        display: flex;
+        flex-direction: row;
+    }.box-left, .box-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }.separate{
+        margin: 15px;
+    }.buttons{
+        margin-top: 15vh;
+        display: flex;
+        flex-direction: column;
+    }button{
+        font-size: 25px;
+        outline: 0;
+        border: 2px solid black;
+        background-color: transparent;
+        margin-bottom: 2vh;
+        padding: 3vh;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="box-left">
+                <div class="left" onclick="move('esquerda')"></div>
+            </div>
+            <div class="box-center">
+                <div class="top" onclick="move('cima')"></div>
+                <div class="separate"></div>
+                <div class="bottom" onclick="move('baixo')"></div>
+            </div>
+            <div class="box-right">
+                <div class="right" onclick="move('direita')"></div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="clickIn('left')">LEFT</button>
+            <button  onclick="clickIn('right')">RIGHT</button>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function sendMove(y){
+        fetch("http://192.168.100.27:5000/move", 
+        {method: "POST",headers:{
+            "Content-type": "application/json"
+        } ,body:JSON.stringify( { to: y} )})
+    }
+    function click(u){
+        fetch("http://192.168.100.27:5000/click", 
+        {method: "POST",headers:{
+            "Content-type": "application/json"
+        } ,body:JSON.stringify( { to: u} )})
+    }
+    const clickIn = (y)=>{
+        switch(y){
+            case "left":
+                click(y)
+                break
+            case "right":
+                click(y)
+                break
+        }
+    }
+
+    const move = (direction)=>{
+        switch(direction){
+            case "cima":
+                sendMove(direction)
+                break
+            case "baixo":
+                sendMove(direction)
+                break
+            case "esquerda":
+                sendMove(direction)
+                break
+            case "direita":
+                sendMove(direction)
+                break
+        }
+    }
+
+</script>
