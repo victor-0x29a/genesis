@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Synapse</title>
+</head>
+<body>
+    <main>
+        <p>Uma simples synapse "web"</p>
+        <div class="listagem"></div>
+    </main>
+</body>
+<script>
+    function taskColorServer(color){
+        body = {
+            cor: color
+        }
+        const opcao = {
+            method: "POST",
+            body: JSON.stringify(body),
+            headers: {"Content-type": "application/json; charset=UTF-8"},
+        }
+        fetch("/",opcao)
+    }
+    const cores = {
+        azul: {
+            rgb: "0,0,255"
+        },
+        violeta: {
+            rgb: "138,43,226"
+        },
+        limon: {
+            rgb: "119, 255, 0"
+        },
+        laranja: {
+            rgb: "255,145,0"
+        },
+        vermelho: {
+            rgb: "255,0,0"
+        }}
+        for(cor in cores){
+            let select = cor
+            const lista = document.querySelector(".listagem")
+            const botao = document.createElement("button")
+            botao.innerHTML = cor 
+            botao.onclick = function(){taskColorServer(select)}
+            botao.style.color = "rgb("+cores[cor].rgb+")"
+            botao.style.border = "2px solid rgb("+cores[cor].rgb+")"
+            botao.style.textShadow = "1px 1px black"
+            botao.id = cor
+            lista.appendChild(botao)
+        }
+
+</script>
+</html>
+
+
