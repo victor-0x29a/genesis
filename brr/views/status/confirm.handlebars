@@ -1,0 +1,36 @@
+{{#if validation}}
+    <div class="card">
+        <div class="card-body">
+            <hr>
+            <a href="/"><h2>Sua conta já está confirmada, clique aqui para voltar!</h2></a>
+        </div>
+    </div>
+{{else}}
+    <div class="card">
+        <div class="sair d-flex justify-content-end">
+            <a href="/"><button type="button" class="btn-close text-start" aria-label="Close"></button></a>
+        </div>
+        <form action="/confirmmta" method="POST">
+            <h2 class="mt-1 ms-3">Você está vinculando sua conta</h2>
+            <hr>
+            <div class="row">
+                <div class="col-4">
+                    <div class="mb-3 ms-2">
+                        <label for="exampleFormControlInput1" class="form-label">Nome da sua conta cadastrada no servidor</label>
+                        <input type="text" class="form-control" name="conta" id="exampleFormControlInput1" placeholder="joao123">
+                        <label for="exampleFormControlInput2" class="form-label mt-2">Sua palavra chave</label>
+                        <input type="text" class="form-control" name="key" id="exampleFormControlInput2" placeholder="aleatoria...">
+                        <button class="btn btn-brr mt-3">Vincular</button>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <h3 class="mb-3 mt-2">Porque vincular sua conta?</h3>
+                    <p>Simples, assim você consegue participar de sorteios semanais, tanto como vip, itens, veiculos etc. E com isso em breve você terá uma "voz" a mais se mandar <strong>sugestões</strong> por aqui. <br>Somente com a conta 
+                    vinculada você consegue comprar <strong>coins</strong>, e em um breve momento você vai conseguir realizar ações do servidor por aqui, fique ligado! &#128513; </p>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+{{/if}}

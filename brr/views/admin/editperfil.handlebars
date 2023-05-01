@@ -1,0 +1,35 @@
+
+
+
+<div class="content d-flex justify-content-center">
+    <div class="card w-50">
+        <div class="exit d-flex justify-content-end">
+            <a href="/admin/membros"><button type="button" class="btn-close" aria-label="Close"></button></a>
+        </div>
+        <div class="card-body">
+            <form action="/admin/membros/editar" method="POST" class="w-100">
+                <div class="exclusive text-left mb-2">
+                    <h2 class="mb-2">Você está efetuando uma edição de perfil!</h2>
+                    <p class="ms-3">Como toda ação gera uma reação, aqui vai gerar um log, fique esperto!</p>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <input type="hidden" name="id" value="{{id}}">
+                            <label for="exampleInputPassword1" class="form-label"><strong style="color: red;">*</strong>Nome</label>
+                            <input type="text" class="form-control" name="nome"  value="{{nome}}" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label"><strong style="color: red;">*</strong>Nome de usuário</label>
+                            <input type="text" class="form-control" name="usuario" aria-describedby="emailHelp" value="{{#if usuario}} {{usuario}} {{else}}  {{/if}}">
+                            <div id="emailHelp" class="form-text">Nome de usuário</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons d-flex justify-content-between">
+                    <button class="btn btn-brr">Editar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+
+
+<div class="content d-flex justify-content-center">
+    <div class="card w-50">
+        <div class="exit d-flex justify-content-end">
+            <a href="/"><button type="button" class="btn-close" aria-label="Close"></button></a>
+        </div>
+        <div class="card-body">
+            <form action="/registro" method="POST" class="w-100">
+                <div class="exclusive text-left mb-2">
+                    <h2 class="mb-2">Você está efetuando o registro!</h2>
+                    <p class="ms-3">Não passe nenhuma informação que você registrar aqui para estranhos!</p>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label"><strong style="color: red;">*</strong>Nome</label>
+                            <input type="text" class="form-control" name="nome"  >
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label"><strong style="color: red;">*</strong>Email</label>
+                            <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">Seu email cadastrado</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label"><strong style="color: red;">*</strong>Senha</label>
+                            <input type="password" class="form-control" name="senha"  >
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label"><strong style="color: red;">*</strong>Repita sua senha</label>
+                            <input type="password" class="form-control" name="senha2"  >
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons d-flex justify-content-between">
+                    <button class="btn btn-brr">Registrar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,278 @@
+{{#if user}}
+    <style>
+        .col-6 img{
+            opacity: 0.8;
+            transform: skewY(01deg);
+            transition-duration: 2s;
+        }.col-6 img:hover{
+            opacity: 1;
+            transform: skewY(0deg);
+        }
+        .myul_brr{
+            width: 80%;
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            list-style: none;
+            font-weight: bolder;
+        }.myil_brr{
+            width: 80%;
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            list-style: none;
+        }
+        
+    </style>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12">
+                    <h2>
+                        Últimas atualizações:
+                    </h2>
+                    <hr>
+                    <div class="card d-flex flex-column mCustomScrollbar"  data-mcs-theme="dark" style="height: 40vh;">
+                        {{#if atualizacao}}
+                            {{#each atualizacao}}
+                                <div class="card-body">
+                                    <h4>
+                                        {{titulo}}
+                                    </h4>
+                                    <hr>
+                                    <p>
+                                        {{texto}}
+                                    </p>
+                                </div>
+                            {{/each}}
+                        {{else}}
+                            <h1>Opa</h1>
+                        {{/if}}
+                    </div>
+                </div>
+                <hr>
+                <div class="col-6 mt-5 text-center mb-5 d-flex justify-content-center flex-column align-self-center">
+                    <h2>Conheça os coins!</h2>
+                    <hr>
+                    <p>
+                        O sistema de coins está ligado diretamente com a <strong>cidade</strong>, com ele você consegue comprar
+                        planos vips, certos itens e veículos! 
+                        <br>
+                        Veja logo abaixo o preço dos <strong>coins</strong> e os planos vips já com preço de coins!
+                    </p>
+                </div>
+                <div class="col-6">
+                    <img src="/assets/guymoney.png" alt="homem com bolsa de dinheiro" class="w-100 mb-5 mt-5">
+                </div>
+                <hr>
+            </div>
+            <div class="row text-center">
+                <h2 class="mt-5 mb-5">Catálogo de Coin</h2>
+                <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+
+                    <ul class="myul_brr">
+                        <li>
+                            Moeda
+                        </li>
+                        <li>
+                            Item
+                        </li>
+                        <li>
+                            Quantidade
+                        </li>
+                        <li>
+                            Valor
+                        </li>
+                    </ul>
+
+                    <ul class="myil_brr">
+                        <li>
+                            Real
+                        </li>
+                        <li>
+                            Coin
+                        </li>
+                        <li>
+                            1
+                        </li>
+                        <li>
+                            0.99R$
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row text-center mb-5">
+                <h2 class="mt-5 mb-5">Catálogo de VIPS</h2>
+                <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+                    <ul class="myul_brr">
+                        <li>
+                            Moeda
+                        </li>
+                        <li>
+                            Item
+                        </li>
+                        <li>
+                            Quantidade
+                        </li>
+                        <li>
+                            Valor
+                        </li>
+                    </ul>
+
+                    <ul class="myil_brr">
+                        <li>
+                            Coin
+                        </li>
+                        <li>
+                            Vip Prata
+                        </li>
+                        <li>
+                            1
+                        </li>
+                        <li>
+                            15C$
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+{{else}}
+    <style>
+        .col-6 img{
+            opacity: 0.8;
+            transform: skewY(01deg);
+            transition-duration: 2s;
+        }.col-6 img:hover{
+            opacity: 1;
+            transform: skewY(0deg);
+        }
+        .myul_brr{
+            width: 80%;
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            list-style: none;
+            font-weight: bolder;
+        }.myil_brr{
+            width: 80%;
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            list-style: none;
+        }
+        
+    </style>
+    <div class="card">
+        <div class="card-body">
+            <h1>Olá, cidadão</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <img src="/assets/friends.jpg" alt="Homem do gta v" class="w-100">
+                </div>
+                <div class="col-6 text-center mb-5">
+                    <h2>Venha fazer parte de nossa comunidade!</h2>
+                    <hr>
+                    <p>
+                        Estamos na versão 1.0 do servidor, trabalhando a todo <strong>vapor</strong> para desenvolver cada vez mais melhores 
+                        <strong>sistemas</strong> para a cidade!
+                        <br>
+                        Caso você já faz parte, e não tem uma conta no nosso site, efetue agora para participar de 
+                        sorteios entre outros <strong>benefícios</strong>.
+                    </p>
+                    <button class="btn btn-brr fs-4">Registrar</button>
+                    <button class="btn btn-brr fs-4">Entrar</button>
+                </div>
+                <hr>
+                <div class="col-6 mt-5 text-center mb-5 d-flex justify-content-center flex-column align-self-center">
+                    <h2>Conheça os coins!</h2>
+                    <hr>
+                    <p>
+                        O sistema de coins está ligado diretamente com a <strong>cidade</strong>, com ele você consegue comprar
+                        planos vips, certos itens e veículos! 
+                        <br>
+                        Veja logo abaixo o preço dos <strong>coins</strong> e os planos vips já com preço de coins!
+                    </p>
+                </div>
+                <div class="col-6">
+                    <img src="/assets/guymoney.png" alt="homem com bolsa de dinheiro" class="w-100 mb-5 mt-5">
+                </div>
+                <hr>
+            </div>
+            <div class="row text-center">
+                <h2 class="mt-5 mb-5">Catálogo de Coin</h2>
+                <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+
+                    <ul class="myul_brr">
+                        <li>
+                            Moeda
+                        </li>
+                        <li>
+                            Item
+                        </li>
+                        <li>
+                            Quantidade
+                        </li>
+                        <li>
+                            Valor
+                        </li>
+                    </ul>
+
+                    <ul class="myil_brr">
+                        <li>
+                            Real
+                        </li>
+                        <li>
+                            Coin
+                        </li>
+                        <li>
+                            1
+                        </li>
+                        <li>
+                            0.99R$
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row text-center mb-5">
+                <h2 class="mt-5 mb-5">Catálogo de VIPS</h2>
+                <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+                    <ul class="myul_brr">
+                        <li>
+                            Moeda
+                        </li>
+                        <li>
+                            Item
+                        </li>
+                        <li>
+                            Quantidade
+                        </li>
+                        <li>
+                            Valor
+                        </li>
+                    </ul>
+
+                    <ul class="myil_brr">
+                        <li>
+                            Coin
+                        </li>
+                        <li>
+                            Vip Prata
+                        </li>
+                        <li>
+                            1
+                        </li>
+                        <li>
+                            15C$
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+
+{{/if}}

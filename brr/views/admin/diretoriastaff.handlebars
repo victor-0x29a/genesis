@@ -1,0 +1,32 @@
+
+<div class="card">
+    <div class="sair d-flex justify-content-end">
+        <a href="/admin"><button type="button" class="btn-close text-start" aria-label="Close"></button></a>
+    </div>
+    <h2 class="mb-3 mt-1 ms-2">Adicione ou remova um staff através do email:</h2>
+    <hr>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-6">
+                <form action="/admin/staff/add" method="POST">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email do staff</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Lembre-se isso vai gerar um log.</div>
+                    </div>
+                    <button type="submit" class="btn btn-success">Adicionar</button>
+                </form>
+            </div>
+            <div class="col-6">
+                <form action="/admin/staff/remove" method="POST">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email do staff</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Lembre-se isso vai gerar um log.</div>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Remover</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

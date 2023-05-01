@@ -1,0 +1,80 @@
+<style>
+
+    .log{
+        width: 100%;
+        height: 40vh;
+        overflow-x: hidden;
+    }
+</style>
+
+{{#if nome}}
+    <h1 class="text-white">Olá, {{nome}}</h1>
+{{/if}}
+<div class="card mb-5">
+    <div class="card-body text-center">
+        <h4>
+            Esse é seu painel administrativo! <br>
+            Use com moderação, qualquer ação aqui dentro vai gerar um log!
+        </h4>
+    </div>
+    <div class="box d-flex justify-content-around flex-wrap">
+        <div class="card m-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Gerência comandos</h5>
+                <p class="card-text">Execute funções daqui do site para o servidor.</p>
+                <a href="/admin/comandos" class="btn btn-brr">Gerênciar</a>
+            </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Gerência de suporte</h5>
+                <p class="card-text">Veja se há requisição de suporte e administre-os.</p>
+                <a href="/admin/diretoria/staff" class="btn btn-brr">Gerênciar</a>
+            </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Gerência de status</h5>
+                <p class="card-text">Atualize o status do servidor.</p>
+                <a href="/admin/status" class="btn btn-brr">Gerênciar</a>
+            </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Gerência de changelog</h5>
+                <p class="card-text">Atualize os cidadãos com as últimas atualizações do servidor ou do próprio
+                    site.</p>
+                <a href="/admin/atualizacoes" class="btn btn-brr">Gerênciar</a>
+            </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Gerência de staff</h5>
+                <p class="card-text">Adicione ou remova pessoas da staff por aqui.</p>
+                <a href="/admin/diretoria/staff" class="btn btn-brr">Gerênciar</a>
+            </div>
+        </div>
+        <div class="card m-3" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">Gerência de membros</h5>
+                <p class="card-text">Gerêncie as contas dos cidadões por aqui, bem fácil e rápido.</p>
+                <a href="/admin/membros" class="btn btn-brr">Gerênciar</a>
+            </div>
+        </div>
+    </div>
+    <div class="mt-5">
+        <h2 class="ms-2">Ultimos registro de log</h2>
+        <div class="log mCustomScrollbar" data-mcs-theme="dark">
+            {{#if log}}
+                {{#each log}}
+                    <hr>
+                    <p class="ms-5">{{this.mensagem}}</p>
+                    <small class="ms-5">{{this.data}}</small>
+                    <hr>
+                {{/each}}
+            {{else}}
+                <p class="ms-5">Nenhum log encontrado</p>
+            {{/if}}
+        </div>
+    </div>
+</div>

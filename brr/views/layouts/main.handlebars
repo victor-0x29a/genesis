@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B.R.R</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, rgba(236,24,105,1), black);
+        }
+        .main-home-page{
+            height: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="/scroll/jquery.mCustomScrollbar.css" />
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body >
+    {{>nav}}
+    <div class="container mt-5 main-home-page mCustomScrollbar" data-mcs-theme="dark">
+        {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+        {{else}}
+        {{/if}}
+        {{>_msg}}
+        {{{body}}}
+    </div>
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="/scroll/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>

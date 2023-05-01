@@ -1,0 +1,31 @@
+
+<div class="card">
+    
+    <div class="sair d-flex justify-content-end">
+        <a href="/admin"><button type="button" class="btn-close" aria-label="Close"></button></a>
+    </div>
+    <div class="card-body">
+        <h2>
+            Todas as atualizações realizadas:
+        </h2>
+        <hr>
+        <a href="/admin/atualizacoes/criar" class="btn btn-brr">Criar atualização</a>
+        <div class="container d-flex justify-content-arround flex-wrap">
+            {{#if data}}
+                {{#each data}}
+                    <div class="card m-3" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">{{titulo}}</h5>
+                            <p class="card-text">{{texto}}</p>
+                            <a href="/admin/atualizacoes/remove/{{slug}}" class="card-link">Remover</a>
+                            <a href="/admin/atualizacoes/{{slug}}/editar" class="card-link">Editar</a>
+                        </div>
+                    </div>
+                {{/each}}
+            {{else}}
+            <div class="alert alert-success mt-5">Ah :( não tem nenhuma atualização, chame os desenvolvedores para poder criar uma :D!</div>
+            {{/if}}
+        </div>
+
+    </div>
+</div>

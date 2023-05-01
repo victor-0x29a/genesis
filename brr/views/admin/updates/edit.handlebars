@@ -1,0 +1,50 @@
+
+
+<div class="content d-flex justify-content-center">
+    <div class="card w-50">
+        <div class="exit d-flex justify-content-end">
+            <a href="/admin/atualizacoes"><button type="button" class="btn-close" aria-label="Close"></button></a>
+        </div>
+        <div class="card-body">
+            <form action="/admin/atualizacoes/{{slug}}/editar" method="POST" class="w-100">
+                <div class="exclusive text-left mb-2">
+                    <h2 class="mb-2">Você está editando um changelog!</h2>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label"><strong style="color: red;">*</strong>Titulo</label>
+                            <input type="text" class="form-control" name="titulo" value="{{titulo}}" >
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label"><strong style="color: red;">*</strong>Sobre a atualização</label>
+                            <textarea name="sobre" cols="30" rows="5">{{texto}}</textarea>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label"><strong style="color: red;">*</strong>Local</label>
+                            <select class="form-select" name="local"  >
+                                {{#if site}}
+                                    <option value="Site">Site</option>  
+                                    <option value="Servidor">Servidor</option>
+                                {{else}}
+                                    <option value="Servidor">Servidor</option> 
+                                    <option value="Site">Site</option>  
+                                {{/if}}
+                                
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label"><strong style="color: red;">*</strong>Slug</label>
+                            <input type="text" class="form-control" name="slug" value="{{slug}}"  >
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons d-flex justify-content-between">
+                    <button class="btn btn-brr">Atualizar changelog</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

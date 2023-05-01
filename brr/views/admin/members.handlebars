@@ -1,0 +1,33 @@
+
+
+<div class="card">
+    
+    <div class="sair d-flex justify-content-end">
+        <a href="/admin"><button type="button" class="btn-close" aria-label="Close"></button></a>
+    </div>
+    <div class="card-body">
+        <h2>
+            Todos os membros registrados:
+        </h2>
+        <hr>
+        <div class="content d-flex flex-wrap">
+            {{#each dados}}
+                <div class="card m-5" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{nome}}</h5>
+                        {{#if isconfirm}}
+                            <h6 class="card-subtitle mb-2 text-muted">Conta confirmada.</h6>
+                        {{else}}
+                            <h6 class="card-subtitle mb-2 text-muted">Conta não confirmada.</h6>
+                        {{/if}}
+                        <p class="card-text">{{email}}</p>
+                        <a href="/admin/membros/remove/{{_id}}" class="card-link">Remover conta</a>
+                        <a href="/admin/membros/{{_id}}/editar" class="card-link">Editar Conta</a>
+                    </div>
+                </div>
+        {{/each}}
+        </div>
+       
+
+    </div>
+</div>

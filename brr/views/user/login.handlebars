@@ -1,0 +1,28 @@
+
+<div class="content d-flex justify-content-center">
+    <div class="card w-25">
+        <div class="exit d-flex justify-content-end">
+            <a href="/"><button type="button" class="btn-close" aria-label="Close"></button></a>
+        </div>
+        <div class="card-body">
+            <form class="w-100" action="/login" method="POST">
+                <div class="exclusive text-center mb-2">
+                    <img src="/assets/logo.jpg" alt="LOgo do servidor" class="w-50 rounded-pill">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"><strong style="color: red;">*</strong>Email</label>
+                    <input type="email" class="form-control" name="email" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Seu email cadastrado</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"><strong style="color: red;">*</strong>Senha</label>
+                    <input type="password" class="form-control" name="senha"  >
+                </div>
+                <div class="buttons d-flex justify-content-between">
+                    <button type="submit" class="btn btn-brr">Entrar</button>
+                    <a href="/registro" class="btn btn-brr">Registrar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
