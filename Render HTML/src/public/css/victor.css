@@ -1,0 +1,9 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+:root{
+    --FonteServidor: 'Cabin', sans-serif;
+    --CorServidor: rgba(236, 24, 105, 0.651);
+    --corInput: rgb(58, 57, 57);
+    --corFundo: rgb(54, 53, 53);
+}
