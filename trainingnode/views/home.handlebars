@@ -1,0 +1,8 @@
+<h1>Lista de usuarios:</h1>
+
+{{#each u}}
+    <h1>{{dataValues.nome}}</h1>
+    <h1>{{dataValues.senha}}</h1>
+     <a href="/deletar/{{dataValues.id}}"><button>Deletar</button></a>
+
+{{/each}}
